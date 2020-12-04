@@ -4,11 +4,11 @@ const { ensureAuthenticated } = require('../config/auth');
 
 //homepage
 router.get('/', function (req, res, next) {
-  res.render('home.ejs');
+  res.render('index.ejs');
 });
 
 //dashboard
-router.get('/dashboard', ensureAuthenticated, (req, res, next) => {
-  res.send('yet to be implemented');
+router.get('/dashboard', (req, res, next) => {
+  res.render('home.ejs',{ layout : 'layout-home'});
 });
 module.exports = router;

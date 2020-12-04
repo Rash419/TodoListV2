@@ -1,14 +1,27 @@
-<div class="row mt-5">
-    <div class="col-md-6 m-auto">
-      <div class="card card-body text-center">
-        <div class="text-center">
-            <img src="images/todolist.png" id="todolist-icon-size" class="img-fluid" alt="Todolist icon">
-          </div>
-        <p class="lead mt-4" >Create an account or login</p>
-        <a href="/users/register" class="btn btn-primary btn-block mb-2"
-          >Register</a
-        >
-        <a href="/users/login" class="btn btn-secondary btn-block">Login</a>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">
+        <img src="/images/todolist_64.png" width="22" height="24" class="d-inline-block align-top" alt=""
+            loading="lazy">
+        Todolist
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/dashboard"><i class="fas fa-home"></i> Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+        </ul>
     </div>
-  </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+          </li>
+        </ul>
+      </div>
+</nav>

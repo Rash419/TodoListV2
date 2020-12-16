@@ -2,3 +2,137 @@
   max-width: 50%;
   height: auto;
 }
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#06C;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.card {
+    width: 90%;
+    margin: auto
+}
+
+.page {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.float-right.headingright {
+    color: #153063;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+.float-right {
+    color: #7a7a7a;
+    font-weight: 450
+}
+
+.today,
+.tomorrow {
+    color: #153063;
+    font-size: 25px;
+    font-weight: 600
+}
+
+.heading2 {
+    margin-top: 6%
+}
+
+.time {
+    color: #7a7a7a;
+    font-size: 12px
+}
+
+
+.task {
+    color: #153063;
+    font-weight: 500
+}
+
+.task2 {
+    opacity: 0.5
+}
+
+
+
+.card-body {
+    margin: 2%
+}
+
+.card-header {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white !important;
+    padding: 0px;
+    margin-top: 1%
+}
+
+.navTask {
+    color: #136fe8;
+    border-bottom: solid 1px #136fe8
+}
+
+.fa-bars {
+    color: #136fe8
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        font-size: 11px
+    }
+
+    .time {
+        font-size: 6px
+    }
+}

@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
 });
 
 //dashboard
-router.get('/dashboard', (req, res, next) => {
-  res.render('home.ejs',{ layout : 'layout-home'});
+router.get('/today', (req, res, next) => {
+  res.render('today.ejs',{ layout : 'layout-home'});
 });
 module.exports = router;
